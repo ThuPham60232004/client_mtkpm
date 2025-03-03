@@ -1,0 +1,42 @@
+.servicehotel {
+    width: 80%;
+    margin: 3rem auto;
+    margin-block: 8rem;
+    margin-top: 4rem;
+}
+
+.servicehotel_box {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 3rem;
+    text-align: center;
+}
+
+.servicehotel_box_item_step {
+    margin-bottom: 2rem;
+}
+.servicehotel_box_item img {
+    margin: 0 auto;
+    width: 100px; 
+    height: 100px; 
+}
+
+.servicehotel_box_item_step span {
+    padding: .5rem 1.5rem;
+    border-radius: 5rem;
+    background-color: rgba(53, 49, 49, 0.096);
+    color: black;
+}
+
+@media screen and (max-width: 35em) {
+    .servicehotel {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .servicehotel_box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
